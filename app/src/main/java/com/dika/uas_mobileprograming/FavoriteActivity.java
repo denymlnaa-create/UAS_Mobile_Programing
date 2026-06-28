@@ -59,13 +59,20 @@ public class FavoriteActivity extends AppCompatActivity {
             for (Favorit f : favoriteList) {
                 Endemik e = new Endemik();
                 e.setId(f.getId());
+                e.setTipe(f.getTipe());
                 e.setNama(f.getNama());
                 e.setNamaLatin(f.getNamaLatin());
+                e.setFamili(f.getFamili());
+                e.setGenus(f.getGenus());
                 e.setDeskripsi(f.getDeskripsi());
-                e.setFoto(f.getFoto());
                 e.setAsal(f.getAsal());
-                e.setTipe(f.getTipe());
-                // Set other fields if needed
+                e.setSebaran(f.getSebaran());
+                e.setFoto(f.getFoto());
+                e.setSumberFoto(f.getSumberFoto());
+                e.setVidio(f.getVidio());
+                e.setSumberVidio(f.getSumberVidio());
+                e.setStatus(f.getStatus()); // Field status ditambahkan di sini
+
                 endemikList.add(e);
             }
             
