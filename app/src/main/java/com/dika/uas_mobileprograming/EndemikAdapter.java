@@ -14,7 +14,7 @@ import com.bumptech.glide.Glide;
 import java.util.List;
 
 public class EndemikAdapter extends RecyclerView.Adapter<EndemikAdapter.ViewHolder> {
-    
+
     private final List<Endemik> list;
     private OnItemClickCallback onItemClickCallback;
 

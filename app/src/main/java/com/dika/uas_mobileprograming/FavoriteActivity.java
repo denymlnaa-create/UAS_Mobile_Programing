@@ -16,7 +16,7 @@ public class FavoriteActivity extends AppCompatActivity {
     private RecyclerView rvFavorite;
     private TextView tvEmpty;
     private EndemikAdapter adapter;
-    private List<Endemik> list = new ArrayList<>();
+    private final List<Endemik> list = new ArrayList<>();
     private AppDatabase db;
 
     @Override
@@ -71,7 +71,7 @@ public class FavoriteActivity extends AppCompatActivity {
                 e.setSumberFoto(f.getSumberFoto());
                 e.setVidio(f.getVidio());
                 e.setSumberVidio(f.getSumberVidio());
-                e.setStatus(f.getStatus()); // Field status ditambahkan di sini
+                e.setStatus(f.getStatus());
 
                 endemikList.add(e);
             }
